@@ -3,33 +3,20 @@ menu= int(input("""Menu:
 2-------Pesos Argwntinos
 3-------Pesos Mexicanos"""))
 
-def conversionMoneda() :
-    pesos = input("ingrese la cantidad de pesos ")
+def conversionMoneda(Moneda,ValorDeMoneda) :
+    pesos = input("ingrese la cantidad de pesos "+ Moneda)
     pesos = float(pesos)
-    valor_dolar= 3875
-    dolares=pesos/valor_dolar
+    dolares=pesos/ValorDeMoneda
     dolares= str(dolares)
     print("Tienes : "+dolares +"dolares")
 
 if menu==1:
- conversionMoneda()
+ conversionMoneda("Colombianos",3875)
     
 
 elif menu==2 :
-    
-    pesos = input("ingrese la cantidad de pesos colombianos")
-    pesos = float(pesos)
-    valor_dolar= 3875
-    dolares=pesos/valor_dolar
-    dolares= str(dolares)
-    print("Tienes : "+dolares +"dolares")
+    conversionMoneda("Argentinos",65)
 elif menu==3 :
-    
-    pesos = input("ingrese la cantidad de pesos colombianos")
-    pesos = float(pesos)
-    valor_dolar= 3875
-    dolares=pesos/valor_dolar
-    dolares= str(dolares)
-    print("Tienes : "+dolares +"dolares")
+    conversionMoneda("Mexicanos",35)
 else :
     print("ingrese un numero valido perra")
