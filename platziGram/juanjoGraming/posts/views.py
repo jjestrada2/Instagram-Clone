@@ -37,6 +37,7 @@ posts=[{
     'timestamp': datetime.now(),
     'picture':'https://images.pexels.com/photos/4436390/pexels-photo-4436390.jpeg?cs=srgb&dl=pexels-el%C3%ADas-manuel-4436390.jpg&fm=jpg'
     
+    
 
     },
     ]
